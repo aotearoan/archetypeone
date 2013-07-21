@@ -34,35 +34,18 @@ h2 {
     Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: lighter;
     font-size: 3em;
-    color: #999999;
+    color: #000099;
     display: block;
-}
-
-.nav {
-    padding-top: 1em;
-    min-height: 100%;
-    background-color: #CCFF00;
-}
-
-.nav li a {
-    font-size: 1.5em;
-    color: #999999;
-    background-color: inherit;
-
-}
-.nav li a:hover, .nav li.active a {
-    color: #FFFFFF;
-    background-color: inherit;
 }
 
 section {
     margin-top: 3em;
-    border-bottom: 1px solid #999999;
+    border-bottom: 1px solid #000099;
 }
 
 .about-list-label {
     display: inline-block;
-    color: #333333;
+    color: #000099;
     text-align: left;
     width: 4.5em;
     margin: 0;
