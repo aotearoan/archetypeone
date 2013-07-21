@@ -1,3 +1,90 @@
+
 BODY {
+    color: #999999;
     background-color: #FFFFFF;
+    font-family: "HelveticaNeue-UltraLight","Helvetica Neue Ultra Light","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: lighter;
+}
+
+#wrapper-div {
+    margin-left: 0;
+}
+
+#logo {
+    display: inline-block;
+    margin-top: 1em;
+    padding-right: 1em;
+}
+
+h1 {
+    font-family: "HelveticaNeue-UltraLight","Helvetica Neue Ultra Light","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: lighter;
+    font-size: 5em;
+    color: #CCCCCC;
+    display: inline-block;
+    margin-top: 0.5em;
+    padding-bottom: 0.45em;
+    vertical-align: bottom;
+}
+
+h1#header-one {
+    color: #CCFF00;
+}
+
+h2 {
+    font-family: "HelveticaNeue-UltraLight","Helvetica Neue Ultra Light","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: lighter;
+    font-size: 3em;
+    color: #999999;
+    display: block;
+}
+
+.nav {
+    padding-top: 1em;
+    min-height: 100%;
+    background-color: #CCFF00;
+}
+
+.nav li a {
+    font-size: 1.5em;
+    color: #999999;
+    background-color: inherit;
+
+}
+.nav li a:hover, .nav li.active a {
+    color: #FFFFFF;
+    background-color: inherit;
+}
+
+section {
+    margin-top: 3em;
+    border-bottom: 1px solid #999999;
+}
+
+.about-list-label {
+    display: inline-block;
+    color: #333333;
+    text-align: left;
+    width: 4.5em;
+    margin: 0;
+    padding: 0;
+}
+
+#about-list {
+    display: inline-block;
+}
+
+#my-pic {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 1.5em;
+}
+
+#footer-div p {
+    display: block;
+    margin-left: auto;
+    text-align: right;
 }
