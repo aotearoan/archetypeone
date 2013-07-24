@@ -1,6 +1,6 @@
 BODY {
-    color: #000000;
-    background-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #336699;
     font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: lighter;
 }
@@ -11,11 +11,19 @@ BODY {
     padding-right: 1em;
 }
 
+a {
+    color: #CCFF00;
+}
+
+a:hover, a:active {
+    color: #00CCFF;
+}
+
 h1 {
     font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: lighter;
     font-size: 5em;
-    color: #CCCCCC;
+    color: #FFFFFF;
     display: inline-block;
     margin-top: 0.5em;
     padding-bottom: 0.45em;
@@ -23,25 +31,25 @@ h1 {
 }
 
 h1#header-one {
-    color: #CCFF00;
+    color: #FFCC00;
 }
 
 h2 {
     font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: lighter;
     font-size: 3em;
-    color: #000099;
+    color: #FFCC00;
     display: block;
 }
 
 section {
     margin-top: 2.5em;
-    border-bottom: 1px solid #000099;
+    border-bottom: 1px solid #FFCC00;
 }
 
 .about-list-label {
     display: inline-block;
-    color: #000099;
+    color: #FFCC00;
     text-align: left;
     width: 4.5em;
     margin: 0;
@@ -55,7 +63,9 @@ section {
 #my-pic {
     display: inline-block;
     vertical-align: top;
-    padding-left: 1.5em;
+    margin-left: 1.5em;
+    opacity: 0.75;
+    border-radius: 5px;
 }
 
 #footer-div p {
@@ -68,38 +78,61 @@ section {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
-    background-size: 128px 64px;
     background-repeat: no-repeat;
-    width: 64px;
-    height: 64px;
+    background-position: center;
+    width: 32px;
+    height: 32px;
+    padding: 8px;
     display: block;
+    opacity: 0.15;
+    border-radius: 32px;
 }
 
 #link-list li a:hover, #link-list li a:active {
-    background-position: -64px 0px;
+    opacity: 1.0;
+    background-color: #FFCC00;
 }
 
 #mail {
-    background-image: url("../images/email.png");
-}
-
-#twitter {
-    background-image: url("../images/twitter.png");
-}
-#facebook {
-    background-image: url("../images/facebook.png");
-}
-
-#google-plus {
-    background-image: url("../images/google-plus.png");
-}
-#flickr {
-    background-image: url("../images/flickr.png");
+    background-image: url("../images/email-32.png");
 }
 
 #linkedin {
-    background-image: url("../images/linkedin.png");
+    background-image: url("../images/linkedin-32.png");
 }
+
+#skype {
+    background-image: url("../images/skype-32.png");
+}
+
+#twitter {
+    background-image: url("../images/twitter-32.png");
+}
+
+#facebook {
+    background-image: url("../images/facebook-32.png");
+}
+
+#google-plus {
+    background-image: url("../images/googleplus-32.png");
+}
+
+#flickr {
+    background-image: url("../images/flickr-32.png");
+}
+
 #pinterest {
-    background-image: url("../images/pinterest.png");
+    background-image: url("../images/pinterest-32.png");
+}
+
+#github {
+    background-image: url("../images/github-32.png");
+}
+
+#heroku {
+    background-image: url("../images/heroku-32.png");
+}
+
+#stackoverflow {
+    background-image: url("../images/stackoverflow-32.png");
 }
