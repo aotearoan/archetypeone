@@ -1,19 +1,8 @@
 
 .DS_Store
 
-.idea/.name
+/.idea
 
-.idea/archetypeone.iml
+*.iml
 
-.idea/misc.xml
-
-.idea/modules.xml
-
-.idea/scopes/scope_settings.xml
-
-.idea/vcs.xml
-
-.idea/workspace.xml
-
-.idea/encodings.xml
-
+/node_modules
