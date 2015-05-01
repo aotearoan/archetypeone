@@ -1,0 +1,43 @@
+{
+  "name": "archetypeone",
+  "version": "1.0.0",
+  "description": "archetypeOne website",
+  "main": "index.html",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aotearoan/archetypeone.git"
+  },
+  "keywords": [
+    "java",
+    "scala",
+    "programming",
+    "programmer",
+    "coder",
+    "coding",
+    "web",
+    "developer",
+    "html5",
+    "sass",
+    "angularjs",
+    "switzerland",
+    "cooking",
+    "modernist",
+    "cuisine"
+  ],
+  "author": "Andrew Erickson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aotearoan/archetypeone/issues"
+  },
+  "devDependencies": {
+    "gulp": "~3.8.11",
+    "gulp-rename": "~1.2.2",
+    "gulp-minify-css": "~1.1.0",
+    "gulp-serve": "~0.3.1",
+    "gulp-autoprefixer": "~2.2.0",
+    "gulp-sass": "~1.3.3"
+  }
+}
