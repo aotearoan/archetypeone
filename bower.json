@@ -1,0 +1,37 @@
+{
+  "name": "archetypeone",
+  "description": "archetypeOne website",
+  "main": "index.html",
+  "authors": [
+    "Andrew Erickson"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "java",
+    "scala",
+    "programming",
+    "programmer",
+    "coder",
+    "coding",
+    "web",
+    "developer",
+    "html5",
+    "sass",
+    "angularjs",
+    "switzerland",
+    "cooking",
+    "modernist",
+    "cuisine"
+  ],
+  "homepage": "https://github.com/aotearoan/archetypeone",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "skeleton": "skeleton-css#^2.0.4"
+  }
+}
