@@ -4,13 +4,19 @@ $default-font: Raleway, sans-serif;
 $heading-font: 'Josefin Slab', serif;
 $bg-color-top: #0ff;
 $bg-color-bottom: #f0f;
-$default-color: #000;
+$heading-color: #fff;
+$default-color: #fff;
+$overlay-color: #000;
 $link-color: #ff0;
 
 BODY {
   color: $default-color;
   font-family: $default-font;
-  @include background(linear-gradient(rgba($bg-color-top, .5), rgba($bg-color-bottom, .5)));
+  @include background(
+                  linear-gradient(rgba($bg-color-top, .15), rgba($bg-color-bottom, .15)),
+                  linear-gradient(rgba($overlay-color, .5), rgba($overlay-color, .5)),
+                  url(../images/header-bg.jpg)
+  );
   font-size: 2.5vmax;
   background-color: #000;
 }
@@ -28,7 +34,7 @@ h2 {
 }
 
 a {
-  color: rgba($link-color, .75);
+  color: rgba($link-color, .5);
 
   &:hover {
     color: rgba($link-color, 1);
