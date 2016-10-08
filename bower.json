@@ -32,6 +32,9 @@
     "tests"
   ],
   "dependencies": {
-    "skeleton": "skeleton-css#^2.0.4"
+    "skeleton": "skeleton-css#^2.0.4",
+    "font-awesome": "^4.6.3",
+    "angular-fullpage.js": "^0.2.1",
+    "angular-ui-router": "^0.3.1"
   }
 }

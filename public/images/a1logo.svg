@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288.5 320.5">
+  <defs>
+    <style>
+      .a {
+        fill: #fff;
+        opacity: 0.15;
+      }
+
+      .b {
+        fill: #ff0;
+        opacity: 0.75;
+      }
+    </style>
+  </defs>
+  <title>a1logo</title>
+  <circle class="a" cx="144.25" cy="160.25" r="22.25"/>
+  <circle class="a" cx="144.25" cy="206.25" r="22.25"/>
+  <circle class="a" cx="144.25" cy="252.25" r="22.25"/>
+  <circle class="a" cx="144.25" cy="298.25" r="22.25"/>
+  <circle class="a" cx="144.25" cy="22.25" r="22.25"/>
+  <circle class="a" cx="144.25" cy="68.25" r="22.25"/>
+  <circle class="a" cx="144.25" cy="114.25" r="22.25"/>
+  <circle class="b" cx="103.25" cy="139.25" r="22.25"/>
+  <circle class="b" cx="103.25" cy="185.25" r="22.25"/>
+  <circle class="b" cx="103.25" cy="231.25" r="22.25"/>
+  <circle class="b" cx="103.25" cy="277.25" r="22.25"/>
+  <circle class="a" cx="103.25" cy="47.25" r="22.25"/>
+  <circle class="a" cx="103.25" cy="93.25" r="22.25"/>
+  <circle class="a" cx="185.25" cy="138.25" r="22.25"/>
+  <circle class="a" cx="185.25" cy="184.25" r="22.25"/>
+  <circle class="a" cx="185.25" cy="230.25" r="22.25"/>
+  <circle class="a" cx="185.25" cy="276.25" r="22.25"/>
+  <circle class="a" cx="185.25" cy="46.25" r="22.25"/>
+  <circle class="a" cx="185.25" cy="92.25" r="22.25"/>
+  <circle class="b" cx="63.25" cy="116.25" r="22.25"/>
+  <circle class="a" cx="63.25" cy="162.25" r="22.25"/>
+  <circle class="b" cx="63.25" cy="208.25" r="22.25"/>
+  <circle class="a" cx="63.25" cy="254.25" r="22.25"/>
+  <circle class="a" cx="63.25" cy="70.25" r="22.25"/>
+  <circle class="a" cx="22.25" cy="94.25" r="22.25"/>
+  <circle class="b" cx="22.25" cy="140.25" r="22.25"/>
+  <circle class="b" cx="22.25" cy="186.25" r="22.25"/>
+  <circle class="b" cx="22.25" cy="232.25" r="22.25"/>
+  <circle class="a" cx="225.25" cy="116" r="22.25"/>
+  <circle class="b" cx="225.25" cy="162" r="22.25"/>
+  <circle class="a" cx="225.25" cy="208" r="22.25"/>
+  <circle class="a" cx="225.25" cy="254" r="22.25"/>
+  <circle class="a" cx="225.25" cy="70" r="22.25"/>
+  <circle class="a" cx="266.25" cy="94" r="22.25"/>
+  <circle class="b" cx="266.25" cy="140" r="22.25"/>
+  <circle class="b" cx="266.25" cy="186" r="22.25"/>
+  <circle class="b" cx="266.25" cy="232" r="22.25"/>
+</svg>

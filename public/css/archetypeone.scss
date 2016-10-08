@@ -1,139 +1,100 @@
+@import '../../node_modules/bourbon/app/assets/stylesheets/bourbon';
+
+$default-font: Raleway, sans-serif;
+$heading-font: 'Josefin Slab', serif;
+$bg-color-top: #0ff;
+$bg-color-bottom: #f0f;
+$default-color: #000;
+$link-color: #ff0;
+
 BODY {
-    color: #336699;
-    background-color: #FFFFFF;
-    font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: lighter;
+  color: $default-color;
+  font-family: $default-font;
+  @include background(linear-gradient(rgba($bg-color-top, .5), rgba($bg-color-bottom, .5)));
+  font-size: 2.5vmax;
+  background-color: #000;
 }
 
-#logo {
-    display: inline-block;
-    margin-top: 1em;
-    padding-right: 1em;
-}
-
-a {
-    color: #336699;
-}
-
-a:hover, a:active {
-    color: #00CCFF;
+h1, h2, h3, h4, h5 {
+  font-family: $heading-font;
 }
 
 h1 {
-    font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: lighter;
-    font-size: 5em;
-    color: #DDDDDD;
-    display: inline-block;
-    margin-top: 0.5em;
-    padding-bottom: 0.45em;
-    vertical-align: bottom;
-}
-
-h1#header-one {
-    color: #FFCC00;
+  font-size: 5vmax;
 }
 
 h2 {
-    font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: lighter;
-    font-size: 2.5em;
-    color: #FFCC00;
-    display: block;
+  font-size: 4vmax;
 }
 
-section {
-    margin-top: 2.5em;
-    border-bottom: 1px solid #FFCC00;
+a {
+  color: rgba($link-color, .75);
+
+  &:hover {
+    color: rgba($link-color, 1);
+  }
 }
 
-.about-list-label {
-    display: inline-block;
-    color: #FFCC00;
-    text-align: left;
-    width: 4.5em;
-    margin: 0;
-    padding: 0;
+#logo {
+  width: 10vmax;
+  margin-bottom: 3vmax;
 }
 
 #about-list {
+  strong {
+    min-width: 16vmax;
     display: inline-block;
+  }
 }
 
-#my-pic {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 1.5em;
-    opacity: 0.75;
-    border-radius: 5px;
+#link-list {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  li {
+    display: inline-flex;
+  }
+
+  .fa-3x {
+    font-size: 5vmax;
+  }
 }
 
-#footer-div p {
-    display: block;
-    margin-left: auto;
-    text-align: right;
+.section {
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &.center .flex-container {
+    align-items: center;
+  }
+
+  &.left .flex-container {
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+
+    h2 {
+      margin-top: 4vmax;
+    }
+  }
 }
 
-#link-list li a {
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 32px;
-    height: 32px;
-    padding: 8px;
-    display: block;
-    opacity: 0.15;
-    border-radius: 32px;
-    background-color: #336699;
+li {
+  list-style: none;
+  display: flex;
 }
 
-#link-list li a:hover, #link-list li a:active {
-    opacity: 1.0;
-    background-color: #FFCC00;
-}
-
-#mail {
-    background-image: url("../images/email-32.png");
-}
-
-#linkedin {
-    background-image: url("../images/linkedin-32.png");
-}
-
-#skype {
-    background-image: url("../images/skype-32.png");
-}
-
-#twitter {
-    background-image: url("../images/twitter-32.png");
-}
-
-#facebook {
-    background-image: url("../images/facebook-32.png");
-}
-
-#google-plus {
-    background-image: url("../images/googleplus-32.png");
-}
-
-#flickr {
-    background-image: url("../images/flickr-32.png");
-}
-
-#pinterest {
-    background-image: url("../images/pinterest-32.png");
-}
-
-#github {
-    background-image: url("../images/github-32.png");
-}
-
-#heroku {
-    background-image: url("../images/heroku-32.png");
-}
-
-#stackoverflow {
-    background-image: url("../images/stackoverflow-32.png");
+footer {
+  position: absolute;
+  bottom: 0;
+  font-size: 1vmax;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
 }

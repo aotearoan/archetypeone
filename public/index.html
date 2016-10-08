@@ -5,97 +5,74 @@
     <title>archetypeone.com</title>
     <meta http-equiv="Pragma" content="no-cache"/>
     <meta http-equiv="Content-Type" content="text/html;"/>
-    <link href="css/normalizer.css" rel="stylesheet" media="screen" type="text/css"/>
-    <link href="css/skeleton.scss" rel="stylesheet" media="screen" type="text/css"/>
-    <link href="css/archetypeone.scss" rel="stylesheet" media="screen" type="text/css"/>
+    <link href="css/vendor.min.css" rel="stylesheet" media="screen" type="text/css"/>
+    <link href="css/archetypeone.min.css" rel="stylesheet" media="screen" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:700|Raleway" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png">
 </head>
 <body>
 
-<div id="wrapper-div" class="container">
+<div id="wrapper-div" class="container" ng-app="archetypeoneApp" ng-controller="archetypeoneController">
     <!-- nav
     ================================================== -->
     <div class="row">
-        <div id="page-content" class="twelve columns">
+        <div full-page class="twelve columns" options="mainOptions">
 
             <!-- header
             ================================================== -->
-            <header>
-                <div>
-                    <div>
-                        <img id="logo" src="images/a1logo-med.png"/>
-
-                        <h1 id="header-archetype">archetype</h1>
-
-                        <h1 id="header-one">one</h1>
-
-                        <h1 id="header-com">.com</h1>
-                    </div>
+            <header id="header-anchor" class="section center">
+                <div class="flex-container">
+                    <img id="logo" src="images/a1logo.svg"/>
+                    <h1>archetypeone.com</h1>
                 </div>
             </header>
             <!-- about
             ================================================== -->
-            <section id="about-anchor">
-                <h2>01 about</h2>
-                <ul id="about-list" class="unstyled lead">
-                    <li class=""><p class="about-list-label">name:</p>andrew erickson</li>
-                    <li><p class="about-list-label">nationality:</p><a href="http://en.wikipedia.org/wiki/New_Zealand">aotearoan</a>
-                    </li>
-                    <li><p class="about-list-label">location:</p><a
-                            href="https://maps.google.com/maps?q=8052+Z%C3%BCrich,+Switzerland&hl=en&ie=UTF8&sll=37.0625,-95.677068&sspn=55.937499,114.169922&hnear=8052+Zurich,+Canton+of+Zurich,+Switzerland&t=m&z=15">8052
-                        zürich, switzerland</a></li>
-                    <li><p class="about-list-label">permit:</p>eufta swiss b</li>
-                    <li><p class="about-list-label">interests:</p>new technologies, ui design and low latency</li>
-                </ul>
-                <img id="my-pic" src="images/mugshot.png"/>
+            <section id="about-anchor" class="section left">
+                <div class="flex-container">
+                    <h2>about me</h2>
+                    <ul id="about-list" class="unstyled lead">
+                        <li><strong>name:</strong><span>andrew erickson</span></li>
+                        <li><strong>nationality:</strong><span><a href="http://en.wikipedia.org/wiki/New_Zealand">aotearoan</a></span></li>
+                        <li><strong>location:</strong><span><a href="https://maps.google.com/maps?q=8052+Z%C3%BCrich,+Switzerland&hl=en&ie=UTF8&sll=37.0625,-95.677068&sspn=55.937499,114.169922&hnear=8052+Zurich,+Canton+of+Zurich,+Switzerland&t=m&z=15">8052
+                            zürich, switzerland</a></span>
+                        </li>
+                        <li><strong>permit:</strong><span>eufta swiss b</span></li>
+                        <li><strong>interests:</strong><span>new technologies (especially web technologies), ui design and low latency</span></li>
+                    </ul>
+                </div>
             </section>
             <!-- experience
             ================================================== -->
-            <section id="experience-anchor">
-                <h2>02 experience</h2>
-
-                <p class="lead">i am a specialist in java and open source technologies with 13 years experience in the
-                    technology and
-                    finance
-                    industries working on a wide variety of projects.</p>
-
-                <p class="lead">my areas of expertise include architecture,
-                    application
-                    performance and scalability, high frequency low latency trading platforms and user interface
-                    design.</p>
-            </section>
-            <!-- engagement
-            ================================================== -->
-            <section id="engagement-anchor">
-                <h2>03 engagement</h2>
-
-                <p class="lead">if you are interested in my services, collaborating or connecting with me please get in
-                    touch below.</p>
+            <section id="experience-anchor" class="section left">
+                <div class="flex-container">
+                    <h2>experience</h2>
+                    <p>i am a specialist in web development, java, scala and open source technologies with {{ (now | date: 'yyyy') - 1999 }} years experience in the technology and finance industries working on a wide variety of projects.</p>
+                    <p>my areas of expertise include web design/dev, architecture, application performance and scalability, high frequency low latency trading platforms and UX design.</p>
+                    <p>in my spare time i <a href="http://www.chefsteps.com">cook</a>, <a href="http://www.laax.com">snowboard</a>, <a href="http://www.flickr.com/photos/archetypeone">take photos</a> and follow my <a href="http://www.allblacks.com">favourite</a> <a href="http://thehighlanders.co.nz/">sports</a> <a href="http://www.blackcaps.co.nz/">teams</a>.</p>
+                </div>
             </section>
             <!-- connect
             ================================================== -->
-            <section id="connect-anchor">
-                <h2>04 connect</h2>
-                <ul id="link-list" class="inline lead">
-                    <li><a id="mail" href="mailto:andrew@archetypeone.com">andrew@archetypeone.com</a></li>
-                    <li><a id="linkedin" href="http://www.linkedin.com/in/archetypeone">linkedin</a></li>
-                    <li><a id="github" href="https://github.com/aotearoan">github</a></li>
-                    <li><a id="stackoverflow" href="http://stackoverflow.com/users/1638711/aotearoan">stackoverflow</a></li>
-                    <li><a id="twitter" href="https://twitter.com/aotearoan">twitter</a></li>
-                    <li><a id="facebook" href="https://www.facebook.com/aotearoan">facebook</a></li>
-                    <li><a id="google-plus" href="http://plus.google.com/116972274328891262681?prsrc=3">google+</a></li>
-                    <li><a id="flickr" href="http://www.flickr.com/photos/archetypeone">flickr</a></li>
-                    <li><a id="pinterest" href="http://pinterest.com/archetypeone">pinterest</a></li>
-                </ul>
-            </section>
-            <!-- footer
-            ================================================== -->
-            <footer class="footer">
-                <div id="footer-div">
-                    <p>copyright &copy; 2013 andrew erickson</p>
+            <section id="connect-anchor" class="section center">
+                <div class="flex-container">
+                    <ul id="link-list" class="inline lead">
+                        <li><a id="linkedin" href="http://www.linkedin.com/in/archetypeone" title="linkedin"><i class="fa fa-3x fa-linkedin"></i></a></li>
+                        <li><a id="github" href="https://github.com/aotearoan" title="github"><i class="fa fa-3x fa-github"></i></a></li>
+                        <li><a id="behance" href="https://www.behance.net/aotearoan" title="behance"><i class="fa fa-3x fa-behance"></i></a></li>
+                        <li><a id="flickr" href="http://www.flickr.com/photos/archetypeone" title="flickr"><i class="fa fa-3x fa-flickr"></i></a></li>
+                        <li><a id="mail" href="mailto:andrew@archetypeone.com" title="andrew@archetypeone.com"><i class="fa fa-3x fa-envelope"></i></a></li>
+                    </ul>
+                    <footer class="footer">
+                        <div id="footer-div">
+                            <p>copyright &copy; {{ now | date: 'yyyy' }} andrew erickson</p>
+                        </div>
+                    </footer>
                 </div>
-            </footer>
+            </section>
         </div>
     </div>
+    <script defer src="js/vendors.min.js"></script>
+    <script defer src="js/archetypeone.min.js"></script>
 </body>
 </html>
