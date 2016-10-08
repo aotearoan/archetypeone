@@ -1,3 +1,4 @@
 import gulp from 'gulp';
+import runSequence from 'run-sequence';
 
-gulp.task('default', ['html', 'images', 'fonts', 'styles', 'scripts']);
+gulp.task('default', callback =>  { return runSequence(['bower'], ['static', 'styles', 'scripts'], callback) });

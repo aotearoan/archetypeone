@@ -1,6 +1,7 @@
 import configuration from './config';
 import gulp from 'gulp';
 import size from 'gulp-size';
+import runSequence from 'run-sequence';
 
 gulp.task('html', () => {
   gulp.src(configuration.paths.src.html)
@@ -20,3 +21,5 @@ gulp.task('fonts', () => {
     .pipe(size({title: 'fonts'}))
 
 });
+
+gulp.task('static', callback =>  { return runSequence(['html', 'images', 'fonts'], callback) });

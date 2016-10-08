@@ -4,6 +4,7 @@ import cleanCSS from 'gulp-clean-css';
 import rename from 'gulp-rename';
 import sass from 'gulp-sass';
 import size from 'gulp-size';
+import runSequence from 'run-sequence';
 
 gulp.task('vendor-css', () => {
   gulp.src(configuration.paths.src.sass.vendor)
@@ -23,4 +24,4 @@ gulp.task('css', () => {
     .pipe(size({title: 'css'}))
 });
 
-gulp.task('styles', ['vendor-css', 'css']);
+gulp.task('styles', callback =>  { return runSequence(['vendor-css', 'css'], callback) });
