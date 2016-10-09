@@ -17,4 +17,10 @@ app.controller('archetypeoneController', ['$scope', '$filter', ($scope, $filter)
     continuousVertical: true,
     fadingEffect: true
   };
+
+  angular.element(document).ready(() => {
+    setTimeout(() => {
+      angular.element(document).find('body').addClass('loaded');
+    }, 500);
+  });
 }]);
