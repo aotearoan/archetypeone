@@ -10,6 +10,8 @@ $default-color: #fff;
 $overlay-color: #000;
 $link-color: #ff0;
 
+$desktop: 1000px;
+
 @mixin bg-image($image) {
   @include background(
                   linear-gradient(rgba($bg-color-top, .15), rgba($bg-color-bottom, .15)),
@@ -23,6 +25,10 @@ BODY {
   color: $default-color;
   font-family: $default-font;
   font-size: 2.5vmax;
+
+  @media screen and (max-width: $desktop) {
+    font-size: 3vmax;
+  }
 }
 
 $backgroundImageCount: 6;
