@@ -54,9 +54,12 @@ h2 {
 
 a {
   color: rgba($link-color, .75);
+  text-decoration: none;
+  border-bottom: 2px solid rgba($link-color, .75);
 
   &:hover {
-    color: rgba($link-color, 1);
+    color: $link-color;
+    border-bottom: 2px solid $link-color;
   }
 }
 
@@ -83,9 +86,10 @@ a {
 
     a {
       color: rgba($link-color, .5);
+      border: none;
 
       &:hover {
-        color: rgba($link-color, 1);
+        color: $link-color;
       }
     }
   }
