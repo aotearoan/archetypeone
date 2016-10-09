@@ -1,10 +1,11 @@
 @import '../../node_modules/bourbon/app/assets/stylesheets/bourbon';
 
-$default-font: Raleway, sans-serif;
+$default-font: Dosis, sans-serif;
 $heading-font: 'Josefin Slab', serif;
 $bg-color-top: #0ff;
 $bg-color-bottom: #f0f;
 $heading-color: #fff;
+$heading-alt-color: #ff0;
 $default-color: #fff;
 $overlay-color: #000;
 $link-color: #ff0;
@@ -42,6 +43,7 @@ h1 {
 
 h2 {
   font-size: 4vmax;
+  color: $heading-alt-color;
 }
 
 a {
@@ -61,6 +63,7 @@ a {
   strong {
     min-width: 16vmax;
     display: inline-block;
+    font-weight: 300;
   }
 }
 
