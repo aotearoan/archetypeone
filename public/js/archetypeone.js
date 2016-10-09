@@ -5,7 +5,7 @@ const app = angular.module('archetypeoneApp', [
   'ui.router'
 ]);
 
-const backgroundImageCount = 2;
+const backgroundImageCount = 6;
 
 app.controller('archetypeoneController', ['$scope', '$filter', ($scope, $filter) => {
 

@@ -24,7 +24,7 @@ BODY {
   font-size: 2.5vmax;
 }
 
-$backgroundImageCount: 2;
+$backgroundImageCount: 6;
 
 @for $i from 1 through $backgroundImageCount {
   .image-#{$i} {
